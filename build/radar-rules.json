@@ -2969,6 +2969,17 @@
       }
     ]
   },
+  "cuc.edu.cn": {
+    "_name": "中国传媒大学",
+    "yz": [
+      {
+        "title": "研究生招生网",
+        "docs": "https://docs.rsshub.app/university.html#zhong-guo-chuan-mei-da-xue",
+        "source": "/*",
+        "target": "/"
+      }
+    ]
+  },
   "cw.com.tw": {
     "_name": "天下雜誌",
     ".": [
@@ -7186,6 +7197,20 @@
       }
     ]
   },
+  "ithome.com.tw": {
+    "_name": "iThome",
+    "www": [
+      {
+        "title": "Feeds",
+        "docs": "https://docs.rsshub.app/new-media.html#ithome-tai-wan",
+        "source": [
+          "/:category",
+          "/:category/feeds"
+        ],
+        "target": "/ithome/tw/feeds/:category"
+      }
+    ]
+  },
   "iwara.tv": {
     "_name": "iwara",
     "ecchi": [
@@ -9500,6 +9525,19 @@
           "/department/details",
           "/"
         ]
+      }
+    ]
+  },
+  "meituclub.com": {
+    "_name": "妹图社",
+    ".": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/picture.html#mei-tu-she-zui-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/meituclub/latest"
       }
     ]
   },
@@ -16373,6 +16411,16 @@
           "/*path",
           "/"
         ]
+      }
+    ]
+  },
+  "zodgame.xyz": {
+    "_name": "zodgame",
+    ".": [
+      {
+        "title": "论坛版块",
+        "docs": "https://docs.rsshub.app/bbs.html#zodgame",
+        "source": "/forum.php"
       }
     ]
   },

@@ -1644,6 +1644,11 @@
         docs:"https://docs.rsshub.app/traditional-media.html#hua-shi-xin-wen",
         source:"/:category/index.html",
         target:"/cts/:category" } ] },
+  "cuc.edu.cn":{ _name:"中国传媒大学",
+    yz:[ { title:"研究生招生网",
+        docs:"https://docs.rsshub.app/university.html#zhong-guo-chuan-mei-da-xue",
+        source:"/*",
+        target:"/" } ] },
   "cw.com.tw":{ _name:"天下雜誌",
     ".":[ { title:"最新上線",
         docs:"https://docs.rsshub.app/traditional-media.html#tian-xia-za-zhi",
@@ -3809,6 +3814,12 @@
         docs:"https://docs.rsshub.app/new-media.html#it-zhi-jia-fen-lei-zi-xun",
         source:"/",
         target:"/ithome/next" } ] },
+  "ithome.com.tw":{ _name:"iThome",
+    www:[ { title:"Feeds",
+        docs:"https://docs.rsshub.app/new-media.html#ithome-tai-wan",
+        source:[ "/:category",
+          "/:category/feeds" ],
+        target:"/ithome/tw/feeds/:category" } ] },
   "iwara.tv":{ _name:"iwara",
     ecchi:[ { title:"用户视频",
         docs:"",
@@ -5174,6 +5185,11 @@
         source:[ "/department/details",
           "/" ],
         target:(params) => `/medsci${params.s_id ? `/${params.s_id}${params.t_id ? `/${params.s_id}` : ''}` : ''}` } ] },
+  "meituclub.com":{ _name:"妹图社",
+    ".":[ { title:"最新",
+        docs:"https://docs.rsshub.app/picture.html#mei-tu-she-zui-xin",
+        source:[ "/" ],
+        target:"/meituclub/latest" } ] },
   "meteor.today":{ _name:"Meteor",
     ".":[ { title:"看板",
         docs:"https://docs.rsshub.app/bbs.html#meteor",
@@ -9244,6 +9260,16 @@
                     }
                     return `/zju/grs/${type}`;
                 } } ] },
+  "zodgame.xyz":{ _name:"zodgame",
+    ".":[ { title:"论坛版块",
+        docs:"https://docs.rsshub.app/bbs.html#zodgame",
+        source:"/forum.php",
+        target:(params, url) => {
+                const fid = new URL(url).searchParams.get('fid');
+                if (fid) {
+                return `/zodgame/forum/${fid}`
+                }
+            } } ] },
   "zoo.team":{ _name:"政采云前端技术团队",
     weekly:[ { title:"小报",
         docs:"https://docs.rsshub.app/blog.html#zheng-cai-yun-qian-duan-ji-shu-tuan-dui",
