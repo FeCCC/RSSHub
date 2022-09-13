@@ -4116,9 +4116,6 @@
     "/zju/physics/:type": [
         "Caicailiushui"
     ],
-    "/zodgame/forum/:fid?": [
-        "FeCCC"
-    ],
     "/zooTeam/zooTeam/blog": [
         "Pulset"
     ],
