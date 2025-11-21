@@ -39097,8 +39097,7 @@ export default {
       "/live": {
         "path": "/live",
         "categories": [
-          "finance",
-          "popular"
+          "finance"
         ],
         "view": 0,
         "example": "/gelonghui/live",
@@ -41720,8 +41719,7 @@ export default {
       "/chinatax/latest": {
         "path": "/chinatax/latest",
         "categories": [
-          "government",
-          "popular"
+          "government"
         ],
         "example": "/gov/chinatax/latest",
         "parameters": {},
@@ -63305,7 +63303,8 @@ export default {
       "/magazine": {
         "path": "/magazine",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "view": 2,
         "example": "/magnumphotos/magazine",
